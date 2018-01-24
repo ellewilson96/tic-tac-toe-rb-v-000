@@ -42,7 +42,7 @@ def turn(board)
   position = input_to_index(user_input)
   if valid_move?(board,position)
     puts "valid move"
-    move(board, position, token)
+    move(board, position, current_player(board))
     display_board(board)
   else
     puts "try again"
