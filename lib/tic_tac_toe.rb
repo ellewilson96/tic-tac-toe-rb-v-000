@@ -102,6 +102,7 @@ end
 
 def play(board)
   input = turn(board)
-  over?(board)
-  
+  if over?(board) == false
+    turn(board)
+  end
 end
