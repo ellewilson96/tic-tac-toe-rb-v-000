@@ -103,6 +103,6 @@ end
 def play(board)
   input = turn(board)
   if over?(board) == true
-    puts "Congratulations"
+    puts "Congratulations X!"
   end
 end
