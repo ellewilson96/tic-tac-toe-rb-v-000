@@ -99,3 +99,7 @@ def winner(board)
     winner = board[won?(board)[0]]
   end
 end
+
+def play(board)
+  input = turn(board)
+end
