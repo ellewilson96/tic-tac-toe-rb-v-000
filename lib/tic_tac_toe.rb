@@ -102,4 +102,9 @@ end
 
 def play(board)
   input = turn(board)
+  turn_count(board)
+  current_player(board)
+  over?(board)
+  won?(board)
+  full?(board)
 end
