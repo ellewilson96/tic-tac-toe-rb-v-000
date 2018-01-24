@@ -101,9 +101,12 @@ def winner(board)
 end
 
 def play(board)
-  input = turn(board)
-  if over?(false, false, true)
-    puts "Congratulations X!"
-  else turn(board)
+  until over?(board) == true
+    turn(board)
   end
+  if draw?(board) == true
+       puts "Cats Game!"
+  else won?(board)
+     puts "Congratulations #{winner(board)}!"
+   end
 end
