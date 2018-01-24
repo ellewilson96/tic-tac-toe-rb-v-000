@@ -4,6 +4,8 @@ require_relative '../lib/tic_tac_toe'
 
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+allow($stdout).to receive(:puts)
+allow(self).to receive(:over?).and_return(false, true)
 
 play(board)
 puts "Welcome to Tic Tac Toe!"
