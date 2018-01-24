@@ -11,7 +11,7 @@ def input_to_index(move)
    position
 end
 
-def move(board, position, token)
+def move(board, position, token == "X" || "O")
   board[position] = token
 end
 
